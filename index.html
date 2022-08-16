@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="images/desarrollo-web.png"> 
+
+    <!-- link boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- link Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/styles.css"> 
+
+    <title>Personal Portfolio JD</title>
+
+</head>
+<body>
+    <!-- custom cursor code -->
+    <img src="images/Custom_cursor/light_cursor.png" class="cursor" alt=""> 
+
+    <!-- section header starts -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo">Daniel</a>
+            <div class="nav_menu">
+               <ul class="nav_list">
+                    <!-- home logo -->
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <i class='bx bx-home-heart'></i>
+                        </a>
+                    </li>
+
+                    <!-- user logo -->
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class='bx bx-user-pin'></i>
+                        </a>
+                    </li>
+
+                    <!-- skills logo -->
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class='bx bx-book-heart'></i>
+                        </a>
+                    </li>
+
+                    <!-- work logo -->
+                    <li class="nav_item">
+                        <a href="#work" class="nav_link">
+                            <i class='bx bx-briefcase' ></i>
+                        </a>
+                    </li>
+
+                    <!-- contact logo -->
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">
+                            <i class='bx bx-message-detail'></i> 
+                        </a>
+                    </li>
+
+               </ul> 
+            </div>
+
+            <!-- Theme change button -->
+            <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+        </nav>
+    </header> 
+    <!-- sections header ends -->    
+    
+    <!-- sections main starts -->
+    <main class="main">
+
+        <!-- sections home starts -->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+                    <span class="home_greeting">Hola, mucho gusto, mi nombre es</span> 
+                    <h1 class="home_name">Juan Daniel Valderrama</h1>
+                    <h3 class="home_education">Full <span class="typing-text">Stack Developer</span></h3>
+
+                    <div class="home_buttons">
+                        <a download="" href="HCV Juan Daniel.pdf" class="button button--ghost">
+                            Descargar CV
+                        </a>
+                        <a href="#about" class="button">Acerca de mí</a>
+                    </div>
+                </div>
+
+                <div class="home_handle">
+                    <img src="images/myphoto.png" alt="" class="home_img">
+                </div>
+                <div class="home_social">
+
+                    <!-- link Linkedln -->
+                    <a href="https://www.linkedin.com/in/juan-daniel-perez" target="_blank"  class="home_social-link">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                    <!-- link GitHub -->
+                    <a href="https://github.com/juan10024" target="_blank"  class="home_social-link">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                    <!-- Trello Correo -->
+                    <a href="https://trello.com/u/daaniperez04" target="_blank" class="home_social-link">
+                        <i class='bx bxl-trello'></i>
+                    </a>
+
+                </div>
+                <a href="#contact" class="home_scroll">
+                    <i class="bx bx-mouse-alt home_scroll_icon"></i>
+                    <span class="home_scroll-name">Hacía Abajo</span>
+                </a>
+
+            </div>
+        </section>
+        <!-- sections home ends -->
+
+        <!-- sections about starts -->
+        <section class="about section" id="about">
+
+            <span class="section_subtitle">Me presento</span>
+            <h2 class="section_title">Acerca de mí</h2>
+            <div class="about_container container grid">
+                <img src="images/second_photo.jpg" alt="Hombre Joven" class="about_img">
+
+                <div class="about_data">
+                    <div class="about_info">
+
+                        <div class="about_box">
+                            <i class='bx bx-award about_icon'></i>
+                            <h3 class="about_title">Experiencia</h3>
+                            <span class="about_subtitle">+1 año programando</span>
+                        </div>
+                        <div class="about_box">
+                            <i class='bx bx-briefcase about_icon'></i>
+                            <h3 class="about_title">Completados</h3>
+                            <span class="about_subtitle">5 + projectos indivuales</span>
+                        </div>
+                        <div class="about_box">
+                            <i class='bx bx-support about_icon'></i>
+                            <h3 class="about_title">Activo</h3>
+                            <span class="about_subtitle">Siempre 24/7</span>
+                        </div>
+
+                    </div>
+                <p class="about_description">
+                    Junior Web Developer, soy estudiante de ingeníeria perteneciente a la Escuela de Electrónica y Computación de la Universidad
+                    Pedagógica y Tecnológica de Colombia, he realizado distintos proyectos a lo largo de mi formación, de la mano
+                    de excelentes maestros, tanto en mi alma-mater como a través de los distintos cursos en modalidad
+                    virtual; utilizando diversidad de tecnologías y herramientas.    
+                </p>
+
+                <a href="#contact" class="button">Contáctame</a>
+                </div>
+            </div>    
+
+        </section>
+        <!-- sections about ends -->
+
+        <!-- sections skills starts -->
+        <section class="skills section" id="skills">
+
+            <span class="section_subtitle">Mis habilidades</span>
+            <h2 class="section_title">Habilidades Principales</h2>
+
+            <div class="skills_container container grid">
+                <div class="skills_content">
+                    <h3 class="skills_title">Tecnologías Front-End</h3>
+                    
+                    <div class="skills_box">
+                        <div class="skills_group">
+
+                            <div class="skills_data">
+                                <i class='bx bxs-badge-check' ></i>
+
+                                <div>
+                                    <h3 class="skills_name">HTML</h3>
+                                    <span class="skills_level">Intermedio</span>
+                                </div>
+                            </div>    
+                            <div class="skills_data">
+                                <i class='bx bxs-badge-check' ></i>
+    
+                                <div>
+                                    <h3 class="skills_name">CSS</h3>
+                                    <span class="skills_level">Intermedio</span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <i class='bx bxs-badge-check' ></i>
+    
+                                <div>
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills_level">Intermedio</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skills_group">
+
+                            <div class="skills_data">
+                                <i class='bx bxs-badge-check' ></i>
+
+                                <div>
+                                    <h3 class="skills_name">Angular</h3>
+                                    <span class="skills_level">Intermedio</span>
+                                </div>
+                            </div>    
+                                <div class="skills_data">
+                                    <i class='bx bxs-badge-check' ></i>
+    
+                                    <div>
+                                        <h3 class="skills_name">GitHub</h3>
+                                        <span class="skills_level">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <i class='bx bxs-badge-check' ></i>
+    
+                                    <div>
+                                        <h3 class="skills_name">React</h3>
+                                        <span class="skills_level">Básico</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_content">
+                    <h3 class="skills_title">Tecnologías Back-End</h3>
+                    
+                    <div class="skills_box">
+                        <div class="skills_group">
+
+                            <div class="skills_data">
+                                <i class='bx bxs-badge-check' ></i>
+
+                                <div>
+                                    <h3 class="skills_name">Java</h3>
+                                    <span class="skills_level">Avanzado</span>
+                                </div>
+                            </div>    
+                                <div class="skills_data">
+                                    <i class='bx bxs-badge-check' ></i>
+    
+                                    <div>
+                                        <h3 class="skills_name">PHP</h3>
+                                        <span class="skills_level">Básico</span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <i class='bx bxs-badge-check' ></i>
+    
+                                    <div>
+                                        <h3 class="skills_name">Spring Boot</h3>
+                                        <span class="skills_level">Intermedio</span>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="skills_group">
+
+                            <div class="skills_data">
+                                <i class='bx bxs-badge-check' ></i>
+
+                                <div>
+                                    <h3 class="skills_name">MySQL - MongoDB</h3>
+                                    <span class="skills_level">Intermedio</span>
+                                </div>
+                            </div>
+                                <div class="skills_data">
+                                    <i class='bx bxs-badge-check' ></i>
+    
+                                    <div>
+                                        <h3 class="skills_name">Docker</h3>
+                                        <span class="skills_level">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills_data">
+                                    <i class='bx bxs-badge-check' ></i>
+    
+                                    <div>
+                                        <h3 class="skills_name">STS</h3>
+                                        <span class="skills_level">Intermedio</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- sections skills ends -->
+
+        <!-- sections services starts -->
+        <section class="service section">
+            <span class="section_subtitle">Mis Servicios</span>
+            <h2 class="section_title">¿Qúe ofrezco?</h2>
+
+            <div class="services_container container grid">
+                <div class="services_card">
+                    <h3 class="services_title">Desarrollo <br> Web</h3>
+                    <span class="services_button">
+                        Ver más <i class='bx bxs-right-arrow-circle services_icon'></i>
+                    </span> 
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class='bx bx-x services_modal-close' ></i>
+
+                            <h3 class="services_modal-title">Desarrollo Web</h3>
+                            <p class="services_modal-description">
+                                Diseño, maquetación y programación de proyectos web, contando siempre 
+                                con el feedback de  los usuarios. Una web que invite a navegar a través 
+                                de la misma, cumpliendo el propósito para el cual se realizó.
+                            </p>
+
+                            <ul class="services_modal-list">
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-circle services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        Modelar elementos Front-End, entendiendo lo que ocurre del lado del Back-End. 
+                                    </p>
+                                </li>
+
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-circle services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        Crear elementos UX interactivos. 
+                                    </p>
+                                </li>
+
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-circle services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                         Entrelazar mis objetivos con los de la compañía a la cual se me 
+                                         de la oportunidad de pertenecer.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="services_card">
+                    <h3 class="services_title">Crear y Probar <br> Aplicaciones Web </h3>  
+                    <span class="services_button">
+                        Ver más <i class='bx bxs-right-arrow-circle services_icon'></i>
+                    </span> 
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class='bx bx-x services_modal-close' ></i>
+
+                            <h3 class="services_modal-title">Crear y Probar Aplicaciones Web</h3>
+                            <p class="services_modal-description">
+                                Participar en el proceso de entendimiento a profundidad de 
+                                las necesidades tanto del usuario como del negocio, para tenerlos en 
+                                cuenta durante todo el proceso de vida y desarrollo del Software. 
+                            </p>
+
+                            <ul class="services_modal-list">
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-circle services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        Desarrollar la arquitectura del sitio web e interfaz de usuario.
+                                    </p>
+                                </li>
+
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-circle services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        Consolidar el funcionamiento de la web en diferentes dispositivos
+                                        dominando el Responsive-Web-Design.  
+                                    </p>
+                                </li>
+
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-circle services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        Trabajar en estrecha colaboración 
+                                        para crear un entorno de trabajo creativo y positivo. La funcionalidad 
+                                        es tan importante para mí como la estética.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="services_card">
+                    <h3 class="services_title">Servidores <br>/ Bases de Datos </h3>
+                    <span class="services_button">
+                        Ver más <i class='bx bxs-right-arrow-circle services_icon'></i>
+                    </span> 
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class='bx bx-x services_modal-close' ></i>
+
+                            <h3 class="services_modal-title">Servidores / Bases de Datos</h3>
+                            <p class="services_modal-description">
+                                Asegurar la optimización de la aplicación web, siendo capaz de ofrecer 
+                                mantenimiento oportuno. Así las cosas, permitir un sitio veloz enfatizando 
+                                en la escalabilidad.
+                            </p>
+
+                            <ul class="services_modal-list">
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-circle services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        Conocimiento de tecnología en bases de datos como MySQL, SQL y MongoDB. 
+                                    </p>
+                                </li>
+
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-circle services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        Experiencia con web APIs,RESTful APIs y arquitecturas de micro servicios. 
+                                    </p>
+                                </li>
+
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-circle services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        Curiosidad por nuevas tendencias para mantenerme 
+                                        al día de las últimas tecnologías y entender cuales son los estándares de la industria. 
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- sections services ends -->
+
+        <!-- sections work starts -->
+        <section class="work section" id="work">
+            <span class="section_subtitle">Mi Portafolio</span>
+            <h2 class="section_title">Trabajos Recientes</h2>
+
+            <div class="work_filters">
+                <span class="work_item active_work" data-filter='all'>Todo</span>
+                <span class="work_item " data-filter='.web'>Desarrollo Web</span>
+                <span class="work_item " data-filter='.design'>Diseño</span>
+                <span class="work_item " data-filter='.blog'>Blog</span>
+            </div>
+
+            <div class="work_container container grid">
+
+                <div class="work_card mix design">
+                    <img src="images/project 1.jpg" alt="" class="work_img">
+                    <h3 class="work_title">Diseño</h3>
+
+                    <a href="#" class="work_button">
+                        Demo <i class='bx bxs-right-arrow-square work_icon'></i>
+                    </a>
+                </div>
+
+                <div class="work_card mix web">
+                    <img src="images/project 2.jpg" alt="" class="work_img">
+                    <h3 class="work_title">Desarrollo Web</h3>
+
+                    <a href="#" class="work_button">
+                        Demo <i class='bx bxs-right-arrow-square work_icon'></i>
+                    </a>
+                </div>
+
+                <div class="work_card mix design">
+                    <img src="images/project_3.jpg" alt="" class="work_img">
+                    <h3 class="work_title">Diseño</h3>
+
+                    <a href="#" class="work_button">
+                        Demo <i class='bx bxs-right-arrow-square work_icon'></i>
+                    </a>
+                </div>
+
+                <div class="work_card mix blog">
+                    <img src="images/project_4.jpg" alt="" class="work_img">
+                    <h3 class="work_title">Blog</h3>
+
+                    <a href="#" class="work_button">
+                        Demo <i class='bx bxs-right-arrow-square work_icon'></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <!-- sections work ends -->
+
+        <!-- sections studies stars -->
+        <section class="studies section">
+            <span class="section_subtitle">Formación</span>
+            <h2 class="section_title">Principal y Secundaria</h2>
+
+            <div class="studies_container container swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="studies_card swiper-slide">
+                        <img src="images/electronic.jpg" alt="" class="studies_img">
+
+                        <h3 class="studies_name">Ingeníeria Electrónica</h3>
+                        <p class="studies_description">
+                            Actualmente adelanto mis estudios en ingeníeria Electrónica
+                            a tiempo completo, me encuentro cursando 6to semestre. A través de mi paso por 
+                            este excelente pregrado se me han inculcado los fundamentos que todo profesional
+                            de alto desempeño debe poseer, disciplina, trabajo en equipo, responsabilidad...  
+                        </p>
+                    </div>
+
+                    <div class="studies_card swiper-slide">
+                        <img src="images/estudios.jpg" alt="" class="studies_img">
+
+                        <h3 class="studies_name">Java Programming</h3>
+                        <p class="studies_description">
+                            Curso intensivo ofrecido por Oracle-Academy, participe en el proceso de selección
+                            realizado por el gobierno, a través de minTic siendo merecedor de un cupo para el cursor
+                            Java Fundamentals(90h) - Java Foundations(90h) - Java Programming(90h). 
+                        </p>
+                    </div>
+
+                    <div class="studies_card swiper-slide">
+                        <img src="images/java_1.jpg" alt="" class="studies_img">
+
+                        <h3 class="studies_name">Java/Angular</h3>
+                        <p class="studies_description">
+                            Mediante la plataforme Udemy realicé el curso impartido por el ingeníerio
+                            Alfredo Leal titulado "Spring Boot y Angular: Creando aplicaciones cómo Fullstack",
+                            en el cual desarollé un proyecto utilizando gran variedad de herramientas y tecnologías.
+                        </p>
+                    </div>
+
+                    <div class="studies_card swiper-slide">
+                        <img src="images/java_2.jpg" alt="" class="studies_img">
+
+                        <h3 class="studies_name">Java/React</h3>
+                        <p class="studies_description">
+                            Dentro del marco de mi trayectoria educativa, tomé el curso "Curso de desarrollo web 
+                            full stack Java y React (TS) - 2022" en el cúal el ingeníerio Jonathan Peñaloza comparte 
+                            un extenso conocimiento en el Desarrollo Web y de Software.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- sections studies ends -->
+
+        <!-- sections contact starts -->
+        <section class="contact section" id="contact">
+            <span class="section_subtitle">Cualquier interés</span>
+            <h2 class="section_title">Contáctame</h2>
+
+            <div class="contact_container container grid">
+                <div class="contact_content">
+                    <h3 class="contact_title">Contacto Directo</h3>
+
+                    <div class="contact_info">
+
+                        <div class="contact_card">
+                            <i class='bx bx-mail-send contact_card_icon'></i>
+                            <h3 class="contact_card-title">Email</h3>
+                            <span class="contact_card-data">daaniperez04@gmail.com</span>
+
+                            <a href="mailto:daaniperez04@gmail.com" target="_blank" class="contact_button">
+                                Escríbeme <i class='bx bxs-right-arrow-circle contact_button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact_card">
+                            <i class='bx bxl-whatsapp contact_card_icon' ></i>
+                            <h3 class="contact_card-title">WhatsApp</h3>
+                            <span class="contact_card-data">3112128554</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=573112128554&text=Hola, quisiera contactar contigo!" target="_blank" class="contact_button">
+                                Escríbeme <i class='bx bxs-right-arrow-circle contact_button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact_card">
+                            <i class='bx bxs-briefcase contact_card_icon'></i>
+                            <h3 class="contact_card-title">Linkedln</h3>
+                            <span class="contact_card-data">Juan Daniel Pérez</span>
+
+                            <a href="https://www.linkedin.com/in/juan-daniel-perez/" target="_blank" class="contact_button">
+                                Revisa mi perfil de Linkedln <i class='bx bxs-right-arrow-circle contact_button-icon'></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="contact_content">
+                    <h3 class="contact_title">Envíame tú Propuesta/Proyecto</h3>
+                    <form action="" class="contact_form">
+
+                        <div class="contact_form-div">
+                            <label for="" class="contact_form-tag">Nombre</label>
+                            <input type="text" placeholder="Ingresa tú nombre" class="contact_form-input" required>
+                        </div>
+
+                        <div class="contact_form-div">
+                            <label for="" class="contact_form-tag">Email</label>
+                            <input type="email" placeholder="Ingresa tú correo" class="contact_form-input" required>
+                        </div>
+
+                        <div class="contact_form-div contact_form-area">
+                            <label for="" class="contact_form-tag">Proyecto, propuesta, consejo</label>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Describe tú mensaje" class="contact_form-input" required></textarea>
+                        </div>
+
+                        <button class="button">Enviar Mensaje</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <!-- sections contact ends -->
+
+    </main>
+    <!-- sections main ends -->
+
+    <!-- Sections Footer starts -->
+    <footer class="footer">
+        <div class="footer_container container">
+            <h1 class="footer_title">Juan Daniel</h1>
+            <ul class="footer_list">
+                <li>
+                    <a href="#about" class="footer_link">Acerca de mí</a>
+                </li>
+
+                <li>
+                    <a href="#work" class="footer_link">Proyectos</a>
+                </li>
+
+                <li>
+                    <a href="#skills" class="footer_link">Mis Conocimientos</a>
+                </li>
+            </ul>
+            
+            <ul class="footer_social">
+                <a href="https://www.facebook.com/Juan Daniel Perez" target="_blank" class="footer_social-link">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+
+                <a href="https://www.instagram.com/soyddan" target="_blank" class="footer_social-link">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+
+                <a href="https://industrias-dan.atlassian.net/wiki/people/62d8495677308a9694e22841" target="_blank" class="footer_social-link">
+                    <i class='bx bx-network-chart'></i>
+                </a>
+            </ul>
+
+            <span class="footer_copy">&copy; COPYRIGHT @ 2022 by
+                Juan Daniel. Todos los derechos reservados.
+            </span>
+        </div>
+    </footer>
+    <!-- Sections Footer ends -->
+    
+    <!-- links Scroll Reveal -->
+    <script src="js/scrollreveal.min.js"></script>
+
+    <!-- link Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- link MixiTup Filter -->
+    <script src="js/mixitup.min.js"></script>
+
+    <!-- link file main JS -->
+    <script src="js/main.js"></script> 
+
+    <!-- link typed JS and snnipet Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+        var type = new Typed('.typing-text',
+    {
+    strings : [ '', 'Skills', 'Stack Developer', 'Resultados' ],  
+    typeSpeed: 200,
+    loop: true
+    }); 
+    </script>
+
+</body>
+
+</html>
